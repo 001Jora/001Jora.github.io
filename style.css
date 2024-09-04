@@ -1,0 +1,225 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: rgba(92, 252, 0, 0.468);
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 195, 0.632);
+    width: 45%;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+.name{
+    margin:0;
+    font-size: 25px;
+    color:rgba(0, 0, 0, 0.608);
+}
+
+.border{
+    margin:0 15px;
+    color:rgb(0, 0, 0);
+    font-size: 35px;
+}
+
+.sait{
+    margin:0;
+    font-size: 26px;
+    color:rgba(0, 0, 0, 0.608);
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 195, 0.632);
+    width: 45%;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.phone,
+.web,
+.telphone{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 15px;
+    margin-right: 25px;
+    transition:   transform 0.5s ease;
+}
+
+.footer img{
+    width: 24px;
+    margin-right: 5px;
+    transition:   transform 0.5s ease;
+}
+
+.footer img:hover{
+    transform:scale(1.1)
+}
+
+.info-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom:3px solid black;
+    border-top:3px solid black;
+}
+
+.about{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-text{
+    margin-bottom: 20px;
+}
+
+.about img{
+    width: 270px;
+    height: 270px;
+    margin-left: 25px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.experience{
+    border-right: 3px solid black;
+    margin-right: 15px;
+}
+
+.education{
+    margin-left: 20px;
+}
+
+.job-1{
+    margin-bottom: 30px;
+}
+
+.school-1{
+    margin-bottom: 40px;
+}
+
+.skils ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.skils li{
+    background-color: rgba(194, 194, 194, 0.611);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+@media (max-width:768px) {
+    .footer{
+        flex-direction: column;
+        width: 50%;
+    }    
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin:0;
+    }
+
+    .info-container{
+        border:none;
+        flex-direction: column;
+    }
+
+    .experience{
+        border:none;
+    }
+
+
+    .header h1{
+        font-size: 15px;
+    }
+
+    .header{
+        width: 50%;
+    }
+
+    .content{
+        width: 50%;
+    }
+
+    .education{
+        margin:0;
+    }
+}
+
+@media (max-width:435px) {
+   .content{
+        padding: 20px;
+        background-color: rgba(3, 82, 143, 0.647);
+    }
+
+    .content p{
+        font-size: 15px;
+    }
+
+    .job, .job-1, .school, .school-1{
+        padding:2px;
+        margin: 0;
+    }
+
+    body p, h2, h3, h4{
+        color:rgb(255, 255, 255);
+    }
+    
+    .about{
+       width: 100%;
+    }
+
+    .experience{
+        width: 100%;
+        padding: 0;
+        margin:0;
+    }
+
+    .education{
+        width: 100%;
+        padding: 0;
+        margin:0;
+    }
+}
